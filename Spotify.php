@@ -13,7 +13,7 @@ echo "===========================\n";
 while (1) 
 {
 	for ($i=0; $i <= 999 ; $i++) {
-		$mail = "gdhn".$i."@getnada.com"; 
+		$mail = "myshuhu".$i."@adqek.me"; 
 		$send = curl('https://spclient.wg.spotify.com:443/signup/public/v1/account/', 'iagree=true&birth_day=12&platform=Android-ARM&creation_point=client_mobile&password=sgb123&key=142b583129b2df829de3656f9eb484e6&birth_year=2000&email='.$mail.'&gender=male&app_version=849800892&birth_month=12&password_repeat=sgb123', $headers);
 		$data = json_decode($send[0]);
 		if ($data->status == 1) {
