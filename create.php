@@ -29,7 +29,7 @@ $berapa = trim(fgets(STDIN));
 {
 for($i=0;$i<$berapa;$i++)
 {
-$mail = $mau.$i."@spotify.me";
+$mail = $mau.$i."@adqek.me";
 $send = curl('https://spclient.wg.spotify.com:443/signup/public/v1/account/', 'iagree=true&birth_day=12&platform=Android-ARM&creation_point=client_mobile&password='.$pass.'&key=142b583129b2df829de3656f9eb484e6&birth_year=2000&email='.$mail.'&gender=male&app_version=849800892&birth_month=12&password_repeat='.$pass.'');
 	$data = json_decode($send[0]);
 		if ($data->status == 1) {
